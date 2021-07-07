@@ -35,24 +35,33 @@ ul {
 h1,
 h2,
 h3,
-p,
-ul {
-  margin-top: 0px;
-  margin-bottom: 0px;
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Хедер */
 
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  width: 145px;
 }
 
 .logo-web {
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
-
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -61,11 +70,6 @@ ul {
 }
 
 .logo-studio {
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
-
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -73,14 +77,18 @@ ul {
   color: #000000;
 }
 
-.navigation {
-  width: 294px;
-  height: 16px;
-  left: 453px;
-  top: 32px;
+.list {
+  display: flex;
 }
 
+.list .menu + .menu {
+  margin-left: 50px;
+}
 .header-title {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -92,10 +100,10 @@ ul {
 }
 
 .page-current {
-  width: 49px;
-  height: 16px;
-  left: 453px;
-  top: 32px;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-left: 93px;
 
   font-weight: 500;
   line-height: 1.14;
@@ -109,6 +117,11 @@ ul {
 }
 
 .header-contacts {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-left: auto;
+
   font-weight: 500;
   line-height: 1.14px;
   letter-spacing: 0.02em;
@@ -121,9 +134,6 @@ ul {
 }
 
 /*-Студия--Шапка-*/
-
-.hero {
-}
 
 .hero-title {
   font-weight: 900;
