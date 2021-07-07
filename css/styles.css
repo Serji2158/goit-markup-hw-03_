@@ -14,6 +14,8 @@ a {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -49,16 +51,21 @@ p {
   border-bottom: 1px solid #ececec;
 }
 
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: 93px;
+}
 .container-header {
   display: flex;
   align-items: center;
+  height: 80px;
 }
 .logo {
-  display: flex;
+  display: block;
   align-items: center;
   margin-top: 24px;
   margin-bottom: 25px;
-  width: 145px;
 }
 
 .logo-web {
@@ -86,8 +93,8 @@ p {
 }
 .header-title {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 
   font-weight: 500;
   line-height: 1.14;
@@ -101,8 +108,8 @@ p {
 
 .page-current {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
   margin-left: 93px;
 
   font-weight: 500;
@@ -118,8 +125,8 @@ p {
 
 .header-contacts {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
   margin-left: auto;
 
   font-weight: 500;
