@@ -34,6 +34,11 @@ ul {
   border: 1px solid tomato;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 h1,
 h2,
 h3,
@@ -45,27 +50,30 @@ p {
   padding: 0px;
 }
 
-/* Хедер */
+/* Хеддер */
 
 .header {
+  padding-top: 24px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-  margin-right: 93px;
-}
 .container-header {
   display: flex;
   align-items: center;
-  height: 80px;
 }
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-menu {
+  display: flex;
+}
+
 .logo {
   display: block;
   align-items: center;
-  margin-top: 24px;
-  margin-bottom: 25px;
 }
 
 .logo-web {
@@ -88,13 +96,12 @@ p {
   display: flex;
 }
 
-.list .menu + .menu {
+.menu + .menu {
   margin-left: 50px;
 }
+
 .header-title {
   display: block;
-  margin-top: 32px;
-  margin-bottom: 32px;
 
   font-weight: 500;
   line-height: 1.14;
@@ -108,10 +115,8 @@ p {
 
 .page-current {
   display: block;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-left: 93px;
 
+  margin-left: 93px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -123,14 +128,21 @@ p {
   color: var(--text-BG-color);
 }
 
+.list-contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.menu-contacts + .menu-contacts {
+  margin-left: 50px;
+}
+
 .header-contacts {
   display: block;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-left: auto;
 
   font-weight: 500;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
@@ -142,15 +154,32 @@ p {
 
 /*-Студия--Шапка-*/
 
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-color: #2f303a;
+}
+
 .hero-title {
+  max-width: 696px;
+  margin: 0 auto;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-color-white);
 }
 
 .hero-button {
+  display: block;
+  max-width: 200px;
+  margin: 0 auto;
+  margin-top: 30px;
+
   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
