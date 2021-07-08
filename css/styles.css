@@ -92,8 +92,14 @@ p {
   color: #000000;
 }
 
-.list {
+.footer-contacts-list {
   display: flex;
+  flex-direction: column;
+  margin-top: 9px;
+}
+
+.footer-contacts-item + .footer-contacts-item {
+  margin-top: 9px;
 }
 
 .menu + .menu {
@@ -179,6 +185,7 @@ p {
   max-width: 200px;
   margin: 0 auto;
   margin-top: 30px;
+  border-radius: 4px;
 
   font-family: Roboto;
   font-weight: 700;
@@ -195,15 +202,27 @@ p {
   color: var(--text-color-white);
 
   background: var(--text-BG-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /*-Студия--Особенности-*/
 
 .advantages-name {
+  display: none;
   color: var(--text-color-white);
 }
 
+.advantages-list {
+  display: flex;
+  align-items: center;
+}
+
+.advantages-item {
+  flex-basis: calc((100%-90px) / 4);
+}
+
 .advantages-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -230,7 +249,38 @@ p {
   color: var(--title-color);
 }
 
+.we-do-list {
+  display: flex;
+  max-width: 1170px;
+  margin-left: -30px;
+}
+
+.we-do-item {
+  margin-top: 50px;
+  margin-left: 30px;
+  flex-basis: calc((100%-60px) / 3);
+}
+
 /*-Студия--Наша команда-*/
+
+.team-board {
+  display: flex;
+  margin-left: -30px;
+}
+
+.team-board-item {
+  margin-top: 50px;
+  margin-left: 30px;
+  flex-basis: calc((100%-90px) / 4);
+}
+
+.position-title {
+  padding-top: 30px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  text-align: center;
+}
 
 .team-name {
   font-weight: 500;
@@ -241,6 +291,7 @@ p {
 }
 
 .team-positon {
+  margin-top: 10px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -287,10 +338,20 @@ p {
 /* Футер */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background: #2f303a;
 }
 
+.container-footer {
+  display: block;
+}
+
 .footer-address {
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: 0px;
   font-style: normal;
   line-height: 1.71;
 }
