@@ -31,7 +31,7 @@ ul {
   margin: 0 auto;
   padding: 0 15px;
 
-  border: 1px solid tomato;
+  outline: 1px solid tomato;
 }
 
 .section {
@@ -338,12 +338,13 @@ p {
 .project-catalog {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
+  margin-left: -30px;
+  margin-bottom: -30px;
 }
 
 .project-catalog-item {
-  flex-basis: calc((100%-60px) / 3);
-  margin-right: 30pb;
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
   margin-bottom: 30px;
 }
 
@@ -369,6 +370,13 @@ p {
   color: var(--text-color);
 }
 
+.project-discription {
+  border: 1px solid #eeeeee;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+}
 /*------------------ Футер----------------- */
 
 .footer {
