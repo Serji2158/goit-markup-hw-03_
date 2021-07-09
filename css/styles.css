@@ -333,12 +333,11 @@ p {
   border: none;
   padding: 6px 22px;
   border-radius: 4px;
+
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  align-items: center;
-  text-align: center;
 }
 
 .filter-button:hover,
