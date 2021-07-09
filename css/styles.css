@@ -196,7 +196,7 @@ p {
   cursor: pointer;
   color: var(--text-color-white);
 
-  background: var(--text-BG-color);
+  background: #188ce8;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -235,6 +235,7 @@ p {
 }
 
 .advantages-discr {
+  margin-top: 10px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -267,12 +268,22 @@ p {
 
 /*----------Студия--Наша команда---------------*/
 
+.section-team {
+  background: #f5f4fa;
+}
+
 .team-board {
   display: flex;
   margin-left: -30px;
 }
 
 .team-board-item {
+  background: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
   margin-top: 50px;
   margin-left: 30px;
   flex-basis: calc((100%-90px) / 4);
@@ -320,6 +331,8 @@ p {
 
 .filter-button {
   border: none;
+  padding: 6px 22px;
+  border-radius: 4px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -388,6 +401,12 @@ p {
   padding-bottom: 20px;
   padding-right: 24px;
 }
+
+img {
+  display: block;
+  width: 100%;
+}
+
 /*------------------ Футер----------------- */
 
 .footer {
